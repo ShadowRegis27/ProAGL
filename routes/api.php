@@ -9,15 +9,10 @@ use App\Http\Controllers\Api\RoleUtilisateurController;
 use App\Http\Controllers\Api\StatutIncidentController;
 use App\Http\Controllers\Api\UtilisateurController;
 
-//Definition des routes pour l'API prioriteincident
-Route::get('/prioriteincident/index',[prioriteincidentController::class,"index"]);
-Route::get('/prioriteincident/show/{id}',[prioriteincidentController::class,"show"]);
-Route::post('/prioriteincident/store', [prioriteincidentController::class,"store"]);
-Route::put('/prioriteincident/update/{id}',[prioriteincidentController::class,"update"]);
-Route::delete('/prioriteincident/delete/{id}',[prioriteincidentController::class,"destroy"]);
+
 
 //Definition des routes pour l'API Priorite Incident
- Route::get('/prioriteincident/index',[pIncident::class,"index"]);
+Route::get('/prioriteincident/index',[pIncident::class,"index"]);
 Route::get('/prioriteincident/show/{id}',[pIncident::class,"show"]);
 Route::post('/prioriteincident/store', [pIncident::class,"store"]);
 Route::put('/prioriteincident/update/{id}',[pIncident::class,"update"]);
